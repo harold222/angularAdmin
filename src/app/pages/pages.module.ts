@@ -6,10 +6,13 @@ import { ProgessComponent } from './progess/progess.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 
+import { FormsModule } from '@angular/forms';
+
 // para componentes compartidos
 import { SharedModule } from '../shared/shared.module';
 // para router outlet
 import { AppRoutingModule } from '../app-routing.module';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ComponentsModule
   ],
   exports: [
     DashboardComponent,

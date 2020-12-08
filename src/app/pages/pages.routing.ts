@@ -12,10 +12,10 @@ const routes: Routes = [
         path: 'dashboard',
         component: PagesComponent, // rutas hijas
         children: [
-        { path: '', component: DashboardComponent },
-        { path: 'progess', component: ProgessComponent },
-        { path: 'grafica1', component: Grafica1Component },
-        { path: '',  redirectTo: '/dashboard', pathMatch: 'full' } // ruta si esta vacia
+            { path: '', component: DashboardComponent },
+            { path: 'progess', component: ProgessComponent },
+            { path: 'grafica1', component: Grafica1Component },
+            { path: '',  redirectTo: '/dashboard', pathMatch: 'full' } // ruta si esta vacia
         ]
     },
 ];
