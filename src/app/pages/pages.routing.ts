@@ -5,6 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgessComponent } from './progess/progess.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 const routes: Routes = [
 // Estas seran las rutas protegidas
@@ -15,6 +16,7 @@ const routes: Routes = [
             { path: '', component: DashboardComponent },
             { path: 'progess', component: ProgessComponent },
             { path: 'grafica1', component: Grafica1Component },
+            { path: 'account', component: AccountSettingsComponent },
             { path: '',  redirectTo: '/dashboard', pathMatch: 'full' } // ruta si esta vacia
         ]
     },
